@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0,     width=device-width,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    .outer {
+      background-color: #999;
+      padding: 50px;
+    }
+
+    .midder {
+      background-color: #cccccc;
+      padding: 50px;
+    }
+
+    .inner {
+      background-color: #efefef;
+      padding: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div class="outer">
+      outer
+      <div class="midder">
+        midder
+        <div class="inner">
+          inner
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script type="text/javascript">
+    var outer = document.getElementsByClassName('outer')[0];
+    var midder = document.getElementsByClassName('midder')[0];
+    var inner = document.getElementsByClassName('inner')[0];
+
+    // outer.onclick = function () {
+    //   console.log('outer ---- 1');
+    // }
+    // midder.onclick = function () {
+    //   console.log('midder ---- 2');
+    // }
+    // inner.onclick = function () {
+    //   console.log('inner ---- 3');
+    // }
+
+    // outer.addEventListener('click', function () {
+    //   console.log('outer ---- 1');
+    // }, false)
+    // midder.addEventListener('click', function () {
+    //   console.log('midder ---- 2');
+    // }, false)
+    // inner.addEventListener('click', function () {
+    //   console.log('inner ---- 3');
+    // }, false)
+
+    outer.addEventListener('click', function () {
+      console.log('outer ---- 1');
+    }, true)
+    midder.addEventListener('click', function () {
+      console.log('midder ---- 2');
+    }, true)
+    inner.addEventListener('click', function () {
+      console.log('inner ---- 3');
+    }, true)
+  </script>
+
+</body>
+
+</html>
